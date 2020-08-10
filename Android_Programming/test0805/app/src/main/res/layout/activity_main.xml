@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30sp"
+    android:layout_marginBottom="15sp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8BC34A"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="2020년 8월 5일 TEST"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/line_image"
+                android:orientation="horizontal" >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gradescore1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="성적결과"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/date1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="날짜"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350sp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15sp"
+                android:layout_weight="1"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gradescore2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="성적결과"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/date2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="날짜"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350sp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15sp"
+                android:layout_weight="1"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gradescore3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="성적결과"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/date3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="날짜"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350sp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15sp"
+                android:layout_weight="1"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gradescore4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="성적결과"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/date4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="날짜"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350sp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15sp"
+                android:layout_weight="1"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gradescore5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="성적결과"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/date5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="날짜"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350sp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15sp"
+                android:layout_weight="1"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gradescore6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="성적결과"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/date6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="날짜"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350sp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15sp"
+                android:layout_weight="1"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gradescore7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="성적결과"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/date7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="날짜"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350sp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15sp"
+                android:layout_weight="1"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gradescore8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="성적결과"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/date8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="날짜"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350sp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15sp"
+                android:layout_weight="1"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gradescore9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="성적결과"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/date9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="날짜"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350sp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15sp"
+                android:layout_weight="1"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gradescore10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="성적결과"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/date10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50sp"
+                    android:gravity="center"
+                    android:text="날짜"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350sp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15sp"
+                android:layout_weight="1"
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+<!--이동위치-->
+
+
+</LinearLayout>
