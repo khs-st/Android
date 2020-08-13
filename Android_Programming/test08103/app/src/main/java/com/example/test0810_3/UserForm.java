@@ -32,7 +32,6 @@ public class UserForm extends AppCompatActivity {
         ArrayList<String> arrayList=new ArrayList<>();
         arrayList.add("게임");
         arrayList.add("수영");
-        arrayList.add("바람의나라 렙업");
         arrayList.add("독서");
 
         ArrayAdapter<String> arrayAdapter= new ArrayAdapter<>(getApplication(),
