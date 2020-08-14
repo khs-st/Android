@@ -11,9 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.kobalja.weather.R;
-import com.kobalja.weather.activity.WeatherActivity;
+import com.kobalja.weather.activity.MainActivity;
+import com.kobalja.weather.util.GetXmlTask;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -29,8 +31,9 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 
 public class WeatherFragment extends Fragment {
-    Button getSeoulWeather;
-    TextView showSeoulWeather;
+    TextView kangwon;
+    TextView Busan;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -39,18 +42,38 @@ public class WeatherFragment extends Fragment {
         // Inflate the layout for this fragment
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_weather,
                 container, false);
-        //fragment layout 연결
-        getSeoulWeather = rootView.findViewById(R.id.startweather1);
-        showSeoulWeather = rootView.findViewById(R.id.weatherinfo1);
-        getSeoulWeather.setOnClickListener(new View.OnClickListener() {
+        kangwon = rootView.findViewById(R.id.kangwon);
+        Busan=rootView.findViewById(R.id.Busan);
+        Busan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                GetXmlTaskFrag task=new GetXmlTaskFrag();
+                GetXmlTask task = new GetXmlTask((MainActivity) getActivity());
                 task.execute("https://www.kma.go.kr/wid/queryDFS.jsp?gridx=60&gridy=127");
+                Toast.makeText((MainActivity) getActivity(), "부산 날씨",Toast.LENGTH_SHORT).show();
+            }
+        });
+        kangwon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GetXmlTask task = new GetXmlTask((MainActivity) getActivity());
+                task.execute("https://www.kma.go.kr/wid/queryDFS.jsp?gridx=73&gridy=134");
+                Toast.makeText((MainActivity) getActivity(), "강원도 날씨",Toast.LENGTH_SHORT).show();
             }
         });
         return rootView;
     }
+        //fragment layout 연결
+//        getSeoulWeather = rootView.findViewById(R.id.startweather1);
+//        showSeoulWeather=rootView.findViewById(R.id.weatherinfo1);
+//        getSeoulWeather.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                GetXmlTask task=new GetXmlTask();
+//                task.execute("https://www.kma.go.kr/wid/queryDFS.jsp?gridx=60&gridy=127");
+//            }
+//        });
+//        return rootView;
+//    }
     private class GetXmlTaskFrag extends AsyncTask<String, Void, Document> {
         Document doc=null;
 
@@ -134,7 +157,7 @@ public class WeatherFragment extends Fragment {
                 weatherList = weatherElement.getChildNodes();
                 s += "날씨 = " + weatherList.item(0).getNodeValue() + "\n";
             }
-            showSeoulWeather.setText(s);
+
         }
     }
 }

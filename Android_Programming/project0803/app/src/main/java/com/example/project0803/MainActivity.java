@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //위젯과 변수를 연결
-        ok=findViewById(R.id.ok);
+        ok=findViewById(R.id.exit);
         exit=findViewById(R.id.exit);
 
         ok.setOnClickListener(new View.OnClickListener() {

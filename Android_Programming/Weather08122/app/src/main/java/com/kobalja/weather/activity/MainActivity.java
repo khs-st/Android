@@ -31,15 +31,15 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
                     case R.id.tab1:
-                    Toast.makeText(MainActivity.this,"서울 날씨",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,"날씨 보기!",Toast.LENGTH_SHORT).show();
                     getSupportFragmentManager().beginTransaction().replace(R.id.container,weatherFragment).commit();
                     return true;
                     case R.id.tab2:
-                        Toast.makeText(MainActivity.this,"부산 날씨",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this,"설정",Toast.LENGTH_SHORT).show();
                         getSupportFragmentManager().beginTransaction().replace(R.id.container,weatherFragmentB).commit();
                         return true;
                     case R.id. tab3:
-                        Toast.makeText(MainActivity.this,"대구 날씨",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this,"미정",Toast.LENGTH_SHORT).show();
                         Intent intent=new Intent(getApplicationContext(), WeatherActivity.class);
                         startActivity(intent);
                         return true;

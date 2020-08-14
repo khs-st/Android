@@ -45,13 +45,13 @@ public class WeatherFragmentB extends Fragment {
         getBWeather.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                GetXmlTaskFrag task=new GetXmlTaskFrag();
+                GetXmlTask task=new GetXmlTask();
                 task.execute("https://www.kma.go.kr/wid/queryDFS.jsp?gridx=60&gridy=127");
             }
         });
         return rootView;
     }
-    private class GetXmlTaskFrag extends AsyncTask<String, Void, Document> {
+    private class GetXmlTask extends AsyncTask<String, Void, Document> {
         Document doc=null;
 
         //작업쓰레드 영역
