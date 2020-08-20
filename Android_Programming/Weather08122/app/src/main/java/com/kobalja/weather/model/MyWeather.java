@@ -10,6 +10,7 @@ public class MyWeather implements Serializable {
     private String pop; //강수확률
     private String weather; //날씨
 
+
     public MyWeather(String date, String time, String temp, String humi, String pop, String weather) {
         this.date = date;
         this.time = time;

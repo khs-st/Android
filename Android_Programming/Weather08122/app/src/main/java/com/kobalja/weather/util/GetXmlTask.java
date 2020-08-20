@@ -26,9 +26,11 @@ import javax.xml.parsers.DocumentBuilderFactory;
         Document doc = null;
         ArrayList<MyWeather> weatherArrList = new ArrayList<>(); //WeatherActivity에 있던 weatherArrList GetXmlTask 클래스로 이동시켰음
         MainActivity mainActivity;
+        String city; //도시 매개변수 추가
 
-        public GetXmlTask(MainActivity mainActivity){
+        public GetXmlTask(MainActivity mainActivity,String city){
             this.mainActivity=mainActivity;
+            this.city=city;
         }
 
         //작업쓰레드 영역
@@ -135,6 +137,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
             Intent intent=new Intent(mainActivity, WeatherView.class);
             intent.putExtra("MyWeather",weatherArrList);
+            intent.putExtra("city",city);
             mainActivity.startActivity(intent);
         }
     }

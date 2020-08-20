@@ -6,12 +6,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.kobalja.weather.R;
 import com.kobalja.weather.fragment.WeatherFragment;
 import com.kobalja.weather.fragment.WeatherFragmentB;
+import com.kobalja.weather.util.GetXmlTask;
 
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bnview;
@@ -49,4 +51,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+//    public void onSearchWeather(View v) {  //attribute의 onclick에 onSearchWeather입력 후 메인에 넣으면 WeatherFragment의 rootview와 동일하게 동작한다.
+//        GetXmlTask task = new GetXmlTask(this);
+//        switch (v.getId()) {
+//            case R.id.kangwon:
+//                task.execute("https://www.kma.go.kr/wid/queryDFS.jsp?gridx=73&gridy=134");
+//                break;
+//            case R.id.Busan:
+//                task.execute("https://www.kma.go.kr/wid/queryDFS.jsp?gridx=60&gridy=127");
+//                break;
+//            case R.id.seoul:
+//                task.execute("https://www.kma.go.kr/wid/queryDFS.jsp?gridx=37&gridy=127");
+//                break;
+//            case R.id.daegu:
+//                task.execute("https://www.kma.go.kr/wid/queryDFS.jsp?gridx=35&gridy=128");
+//                break;
+////        }
+//    }
 }
